@@ -3,7 +3,14 @@ class Sale < ApplicationRecord
 
   # static methods
   class << self
-    def calculate_statistics(from, to)
+    def calculate_statistics!(from, to)
+      # checking params
+      regexp = /\d{4}-\d{2}-\d{2}/
+      unless regexp.match(from) && regexp.match(to)
+        raise 'parameter are not in the valid format'
+      end
+      raise '"from" is greater then "to"' if from > to
+      
       # initial state of statistic hash
       statistic_hash = {
           :from => from,
