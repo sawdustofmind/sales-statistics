@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Statistic</title>
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+<h2>Revenue</h2>
+  <label for="fromInput">From:</label>
+  <input type="text" name="from" id="fromInput" placeholder="2017-03-01">
+  <label for="toInput">To:</label>
+  <input type="text" name="to" id="toInput" placeholder="2017-03-02">
+  <button id="refreshBtn" class="btn btn-primary" autofocus>Refresh</button>
+<hr/>
+<table id="main-table" border="1" cellspacing="0">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Revenue</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+</body>
+</html>

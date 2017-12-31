@@ -22,7 +22,7 @@ class Sale < ApplicationRecord
       Sale.where('day >= ?', from).where('day <= ?', to)
           .group(:good).sum(:score).each do
       |good, revenue|
-        goods << {'title:' => good, 'revenue' => revenue}
+        goods << {'title' => good, 'revenue' => revenue}
         total_revenue += revenue
       end
 
