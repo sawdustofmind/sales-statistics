@@ -1,11 +1,21 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  good: MyString
-  day: 2017-12-29
-  score: 9.99
+  good: Artificial Flowers
+  day: 2017-03-01
+  score: 72540.04
 
 two:
-  good: MyString
-  day: 2017-12-29
-  score: 9.99
+  good: Baked Goods
+  day: 2017-03-01
+  score: 34032.77
+
+three:
+  good: Artificial Flowers
+  day: 2017-03-02
+  score: 55579.38
+
+four:
+  good: Baked Goods
+  day: 2017-03-02
+  score: 36387.68
+
+
