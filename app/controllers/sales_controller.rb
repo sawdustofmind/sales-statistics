@@ -6,9 +6,8 @@ class SalesController < ApplicationController
 
     begin
       render json: Sale.calculate_statistics!(from, to)
+    rescue ArgumentError => e
+      render json: {:error => e.message}, status: 422
     end
-    # TODO: create custom Error not to throw system errors to production...
-    rescue StandardError
-      render json: {:error => $ERROR_INFO }, status: 422
-    end
+  end
 end
